@@ -3,7 +3,7 @@ require 'carrierwave/storage/file'
 require 'carrierwave/storage/fog'
 
 CarrierWave.configure do |config|
-  if Rails.env.development? || Rails.env.test? #開発とテストは今まで通りに
+  if Rails.env.development? || Rails.env.test? 
     config.storage = :file
   elsif Rails.env.production?
     config.storage = :fog
@@ -14,7 +14,6 @@ CarrierWave.configure do |config|
       aws_secret_access_key: Rails.application.secrets.aws_secret_access_key,
       region: 'ap-northeast-1'
     }
-
     config.fog_directory  = '65team-c-image'
     config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/65team-c-image'
   end
