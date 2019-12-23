@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :basic_auth
 
   def index
-    render html: 'hello world'
+    render html: 'hello worle'
   end
 
   private
