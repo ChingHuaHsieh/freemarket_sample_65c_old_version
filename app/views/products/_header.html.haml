@@ -13,7 +13,7 @@
       %div.header__content__bottom__left
         %div.header__content__bottom__left__category
           = link_to root_path do
-            = fa_icon 'list-ul',{style: 'color: red;'}
+            = fa_icon 'list-ul'
             %span
               カテゴリーから探す
           %ul.header__menu-box--left__parents
@@ -24,7 +24,7 @@
                   = render partial: "header_child", collection: parent.children, as: "category"
         %div.header__content__bottom__left__brand
           = link_to root_path do
-            = fa_icon 'tag',{style: 'color: red;'}
+            = fa_icon 'tag'
             %span ブランドから探す
           %ul.brand__wrapper
             %li.brand

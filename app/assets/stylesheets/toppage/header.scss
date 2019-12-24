@@ -80,6 +80,9 @@
         margin-left: 0px;
         height: 44px;
         padding-top: 9px;
+        i {
+          color: $red;
+        }
         a {
           color: $black;
           display: block;
@@ -182,9 +185,6 @@
         &__brand {
           font-weight: 600;
           display: inline;
-          &--icon {
-            transform: rotate(-45deg);
-          }
           ul {
             display: none;
           }
